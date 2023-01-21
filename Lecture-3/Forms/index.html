@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form action="" method="POST">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="my-username" placeholder="Username">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="my-password" placeholder="Password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Google Hijack</h2>
+
+    <form action="https://www.google.com/search" method="GET">
+        <div>
+            <label for="search">Search</label>
+            <input type="text" name="q" id="search">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+
+    <h2>Youtube Hijack</h2>
+    <form action="https://www.youtube.com/results" method="GET">
+        <div>
+            <label for="search-youtube">Search Youtube</label>
+            <input type="text" name="search_query" id="search-youtube">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <hr>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="firstName">FirstName</label>
+            <input type="text" name="firstname" id="firstName">
+            <br>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="date" id="dob">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Educational Info</legend>
+            <label for="graduation-marksheet">Marksheet</label>
+            <input type="file" name="marksheet" id="graduation-marksheet">
+            <br>
+        </fieldset>
+      
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+<!-- https://www.google.com/search?q=pizzas -->
+<!-- https://www.youtube.com/results?search_query=ironman -->
