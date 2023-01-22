@@ -1,0 +1,43 @@
+/* Element Selector */
+
+h2{
+    color: palevioletred;
+}
+
+p{
+    text-decoration: line-through;
+}
+
+/* Id Selector */
+
+/* #ironman{
+    font-weight: bold;
+    color: blue;
+} */
+
+#heading{
+    color: lightcoral;
+    border: 3px dashed black;
+}
+
+/* class selector */
+.fav-movie{
+    text-decoration: line-through;
+}
+
+/* Attribute Selector */
+
+input[type="text"]{
+    background-color: blue;
+}
+
+a[href="http://facebook.com"]{
+    color: brown;
+}
+
+
+/* Universal Selector */
+
+*{
+    border: 1px solid gray;
+}

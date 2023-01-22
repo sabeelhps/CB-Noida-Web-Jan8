@@ -1,0 +1,35 @@
+/* Descendent combinator */
+section div p strong{
+    color: red;
+}
+
+/* Child Combinator */
+
+ul > li{
+    border-top:3px solid purple;
+}
+
+/* Adjacent Sibling */
+
+h2+p{
+  text-decoration: line-through;  
+}
+
+/* General Sibling */
+
+article img ~ p{
+    color: green;
+}
+
+.one{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.two{
+    color: lightseagreen;
+}
+
+.one.two{
+    background-color: lightgreen;
+}
