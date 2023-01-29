@@ -1,0 +1,14 @@
+div{
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+    margin:10px auto;
+    font-size: 2rem;
+    padding: 1rem;
+
+    position: sticky;
+    top:10px;
+    background-color: black;
+    color: white;
+}

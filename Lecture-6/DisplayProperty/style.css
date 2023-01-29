@@ -1,0 +1,33 @@
+h1{
+    border: 2px solid black;
+    background-color: aqua;
+    display: inline;
+    width: 400px;
+    height: 600px;
+    /* You should not use margin and padding for top and bottom */
+    /* margin: 30px;
+    padding: 40px; */
+}
+
+span{
+    border: 2px solid black;
+    background-color: palevioletred;
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: 40px;
+    padding: 50px;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: palevioletred;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+}
+div:nth-of-type(3){
+    display: none;
+}
