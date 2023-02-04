@@ -1,0 +1,9 @@
+section{
+    width: 200px;
+    height: 200px;
+    border-top:20px solid lightcoral;
+    border-right:20px solid lightgreen;
+    border-bottom:20px solid lightskyblue;
+    border-left:20px solid lightpink;
+    border-radius: 50%;
+}

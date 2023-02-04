@@ -1,0 +1,70 @@
+.card{
+    border: 2px solid #ccc;
+    width: 380px;
+    padding: 0.5rem;
+    position: relative;
+    /* margin: 10px auto; */
+}
+
+.card img{
+    width: 100%;
+}
+
+.product-description{
+    font-size: 1.5rem;
+}
+
+.product-review{
+    font-size: 1.3rem;
+}
+
+.product-price{
+    font-size: 1.5rem;
+}
+
+.product-price span{
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.product-btn{
+    background:none;
+    border: none;
+    background-color: #184e77;
+    color:white;
+    font-size: 1.2rem;
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-name{
+    position: relative;
+}
+
+.product-name span{
+    position: absolute;
+    right: 10px;
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.rating-pill{
+    background-color: #f4f3ee;
+    padding: 4px 8px;
+    border-radius: 6px;
+    position: absolute;
+    top:40%;
+    left:5%
+}
+
+/* Flexbox ---------------------------------*/
+
+.container{
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
