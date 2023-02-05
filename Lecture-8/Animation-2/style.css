@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    width: 100px;
+    border-top:12px solid black;
+    border-right:12px solid rgb(78, 58, 58);
+    border-bottom:12px solid rgb(110, 104, 104);
+    border-left:12px solid rgb(209, 207, 207);
+    border-radius: 50%;
+    animation-name: loader;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes loader {
+    100%{
+        transform: rotateZ(1turn);
+    }
+}

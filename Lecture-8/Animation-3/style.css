@@ -1,0 +1,22 @@
+section{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+section img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes bounce {
+    100%{
+        transform: translateY(600px) rotateZ(2turn);
+    }
+}
+

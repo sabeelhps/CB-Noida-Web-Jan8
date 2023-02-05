@@ -1,0 +1,58 @@
+section{
+    width: 70vw;
+    border: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section div{
+    width: 80px;
+    height: 10px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin-right: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    animation-name: music-wave;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes music-wave{
+    0%{
+        height: 100px;
+    }
+   100%{
+    height: 500px;
+   }
+}
+
+section div:nth-of-type(1){
+    animation-timing-function: ease-in;
+}
+
+section div:nth-of-type(2){
+    animation-timing-function: ease-out;
+}
+
+section div:nth-of-type(3){
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+section div:nth-of-type(4){
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+section div:nth-of-type(5){
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+section div:nth-of-type(6){
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}

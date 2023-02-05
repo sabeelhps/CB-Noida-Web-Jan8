@@ -1,0 +1,20 @@
+section{
+    border: 2px solid black;
+    max-width: 400px;
+    margin:50px auto;
+    font-size: 1.5rem;
+    height: 400px;
+    overflow: scroll;
+}
+
+section ul{
+    list-style: none;
+    padding: 0;
+}
+
+section ul li{
+    border: 1px solid #ccc;
+    padding: 10px 8px;
+    border-radius: 8px;
+    margin: 0.8rem;
+}

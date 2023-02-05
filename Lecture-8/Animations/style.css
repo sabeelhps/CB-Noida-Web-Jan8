@@ -1,0 +1,38 @@
+section{
+    width: 300px;
+    height: 20px;
+    border: 4px solid black;
+    background-color: palevioletred;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    /* animation-delay: 1s; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider{
+    25%{
+        height: 100px;
+        background-color: aqua;
+    }
+    50%{
+        height: 400px;
+        background-color: lightgreen;
+    }
+    75%{
+        height: 700px;
+        background-color: coral;
+    }
+    100%{
+        height: 750px;
+        background-color: lightcyan;
+    }
+}
+
+
+section:hover{
+    animation-play-state: paused;
+}
