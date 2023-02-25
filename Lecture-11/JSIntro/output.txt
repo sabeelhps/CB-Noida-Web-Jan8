@@ -1,0 +1,31 @@
+100/0
+Infinity
+typeof Infinity
+'number'
+-100/0
+-Infinity
+0/0
+NaN
+typeof NaN
+'number'
+
+
+parseInt(100.999)
+100
+parseInt('100.999dashvjhbsjdfhvjhbdjnahgvjhbkjdnslk')
+100
+parseFloat('99.9999sdhhdjghbdjn,fdsgjhkkadsjbjnhgjhbjkads')
+99.9999
+
+let isRaining=true;
+undefined
+isRaining
+true
+typeof isRaining
+'boolean'
+isRaining=false;
+false
+isRaining
+false
+typeof isRaining
+'boolean'
