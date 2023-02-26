@@ -1,0 +1,13 @@
+const msg = 'How are you ?'
+undefined
+msg.toUpperCase()
+'HOW ARE YOU ?'
+msg 
+'How are you ?'
+const upperCaseMsg = msg.toUpperCase()
+undefined
+upperCaseMsg
+'HOW ARE YOU ?'
+msg 
+'How are you ?'
+
