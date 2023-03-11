@@ -95,7 +95,6 @@ function printTable(num) {
 
 printTable(4);
 
-
 function convertMinToSec(min) {
     return min * 60;
 }
