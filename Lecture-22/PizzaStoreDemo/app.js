@@ -44,7 +44,7 @@ async function main() {
     const allPizza1 = await PizzaStore.getAllPizzas();
     console.log(allPizza1);
 
-    const bulkPizzaList = await PizzaStore.apply50PerDiscountOnBulkPizza(999,888)
+    // const bulkPizzaList = await PizzaStore.apply50PerDiscountOnBulkPizza(999,888)
 }
 
 main();
