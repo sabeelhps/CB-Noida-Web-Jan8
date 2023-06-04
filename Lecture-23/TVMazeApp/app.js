@@ -34,4 +34,7 @@ form.addEventListener('submit', (e) => {
     const searchText = form.elements[0].value;
     console.log(searchText);
     fetchShows(searchText);
-})
+});
+
+// List of open APIs
+// https://github.com/public-apis/public-apis
