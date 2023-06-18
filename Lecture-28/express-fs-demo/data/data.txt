@@ -1,1 +1,1 @@
-[{"id":"5a87ec0c-63e3-42ea-a1ea-d22c048e9fb4","name":"Iphone 14 Pro","price":900},{"id":"74328019-ec83-4bf6-bbe0-db0ac1d51014","name":"Macbook Air","price":200}]
+[{"id":"5a87ec0c-63e3-42ea-a1ea-d22c048e9fb4","name":"Iphone 14 Pro","price":12.5},{"id":"74328019-ec83-4bf6-bbe0-db0ac1d51014","name":"Macbook Air","price":62.5}]

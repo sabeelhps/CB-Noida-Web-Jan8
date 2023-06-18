@@ -9,19 +9,19 @@ const writeFile = async(data) => {
     return await fs.writeFile(DATA_FILE_PATH, JSON.stringify(data));
 }
 
-const readFile = async() => {
+const findAll = async() => {
     console.log('Reading from data file');
     return JSON.parse(await fs.readFile(DATA_FILE_PATH, {encoding:'utf-8'}));
 }
 
 const findProductById = async (productId) => {
-    const products = await readFile();
+    const products = await findAll();
     const product = products.find((product) => product.id === productId);
     return product;
 }
 
 const updateProduct = async (productId, updateProduct) => {
-    const products = await readFile();
+    const products = await findAll();
     const isPresent = products.some((product) => product.id === productId);
     if (!isPresent) {
         return false;
@@ -42,7 +42,7 @@ const seedFile = async() => {
             id: uuid(),
             name: 'Macbook Air',
             price: 200
-        },
+        }
     ];
 
     await writeFile(products);
@@ -50,7 +50,7 @@ const seedFile = async() => {
 }
 
 module.exports = {
-    readFile,
+    findAll,
     writeFile,
     seedFile,
     findProductById,

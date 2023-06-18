@@ -1,7 +1,9 @@
 const express = require('express');
 const productRepo = require('./repository/productRepo');
+const productService = require('./services/productService');
 const app = express();
 
+// This is just for seeding a file-------
 // (async () => {
 //     try {
 //         await productRepo.seedFile();
@@ -14,7 +16,7 @@ const app = express();
 
 app.get('/products', async (req, res) => {
     try {
-        const products = await productRepo.readFile();
+        const products = await productRepo.findAll();
         res.json(products); 
     }
     catch (err) {
@@ -28,11 +30,20 @@ app.get('/products/:productid', async (req, res) => {
     res.json(product);
 });
 
-app.patch('/products/:productid', async (req, res) => {
+app.put('/products/:productid', async (req, res) => {
     const { productid } = req.params;
-    const updatedProduct = await productRepo.updateProduct(productid, { price: 900, name:'Iphone 14 Pro' });
+    const updatedProduct = await productRepo.updateProduct(productid, { price: 900, name: 'Iphone 14 Pro' });
     res.json(updatedProduct);
-})
+});
+
+app.patch('/products/applyDiscount', async(req, res) => {
+    const { discount } = req.query; 
+    console.log(`Entry into apply discount , discount : ${discount}`);
+    await productService.applyDiscountOnAllProducts(discount);
+    res.json({
+        message:`Applied ${discount} percent discount on all products`
+    })
+});
 
 app.listen(3000,()=>{
   console.log('server started at port 3000');
