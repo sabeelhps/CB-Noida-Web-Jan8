@@ -1,0 +1,14 @@
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<h1>Home File</h1>
+<%= data1 %>
+<%- data1 %>
+<%- data2 %>
+<% if(data3%2===0){ %> 
+    <h2>Even Number</h2>
+<%  }else{ %> 
+    <h2>Odd Number!</h2>
+<% } %> 
+
+<%- include('./partials/footer') %>

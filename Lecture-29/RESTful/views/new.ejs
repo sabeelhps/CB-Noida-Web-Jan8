@@ -1,0 +1,23 @@
+<%- include("./partials/header") %>
+
+<section class="container mt-3">
+    <h1>Add New Blog</h1>
+
+    <form action="/blogs" method="POST">
+        <div class="mb-3">
+            <label class="form-label"for="title">Title</label>
+            <input class="form-control" type="text" name="title" id="title">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"for="image-url">Image Url</label>
+            <input class="form-control" type="text" name="imgUrl" id="image-url">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"for="desc">Descrption</label>
+            <textarea class="form-control" name="desc" id="desc" cols="30" rows="5"></textarea>
+        </div>
+        <button class="btn btn-sm btn-dark">Create</button>
+    </form>    
+</section>
+
+<%- include("./partials/footer") %>
