@@ -1,0 +1,25 @@
+
+<%- include("./partials/header") %>
+<h1>All blogs</h1>
+
+<section class="container">
+    <% for(let blog of blogs) {%>
+        <div class="card mb-3 mx-auto" style="width: 50rem;">
+            <img src="<%=blog.imgUrl%>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= blog.title %></h5>
+              <p class="card-text"><%=blog.desc %></p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <a href="/blogs/<%=blog.id%>" class="btn btn-sm btn-dark">Show</a>
+              <a href="/blogs/<%=blog.id%>/edit" class="btn btn-sm btn-warning">Edit</a>
+              <form action="/blogs/<%=blog.id%>?_method=DELETE" class="d-inline-block" method="post">
+                <button class="btn btn-sm btn-danger">Delete</button>
+              </form>
+            </div>
+        </div>
+    <% } %>
+</section>
+
+<%- include("./partials/footer") %>
+
+    

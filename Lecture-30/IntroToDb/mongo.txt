@@ -1,0 +1,19 @@
+{
+    tweets:[
+        {
+            "id":1,
+            "tweets": "Tweet 1",
+            "user_id":1,
+        },
+         {
+            "id":2,
+            "tweets": "Tweet 2",
+            "user_id":1
+        },
+         {
+            "id":3,
+            "tweets": "Tweet 3",
+            "user_id":3
+        }
+    ]
+}
