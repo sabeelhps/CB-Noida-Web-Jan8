@@ -1,0 +1,8 @@
+1.Mongo Features
+2.Installation and Mongodb Compass
+3.Mongo CRUD Operations
+4.Mongo Operators
+5.JSON vs BSON
+6.Indexes
+7.Aggregation Pipeline - HW
+8.Transactions - HW
