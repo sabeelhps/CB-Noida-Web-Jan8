@@ -39,7 +39,7 @@ app.use((err, req, res, next) => {
     res.status(status).json({
         message: message
     });
-})
+});
 
 app.listen(3000,()=>{
   console.log('server started at port 3000');
