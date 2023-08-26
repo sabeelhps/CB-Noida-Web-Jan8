@@ -1,0 +1,8 @@
+.food-list{
+    list-style: none;
+    border: 1px solid #ccc;
+    margin-top: 3rem;
+    width: 70vw;
+    margin: 3rem auto;
+    border-radius: 10px;
+}
