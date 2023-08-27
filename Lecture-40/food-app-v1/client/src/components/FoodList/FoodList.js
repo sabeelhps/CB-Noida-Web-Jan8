@@ -7,27 +7,32 @@ const FoodList = () => {
 
     const initialFoods = [
         {
-            name: 'Mac Veggie',
-            price: 100,
-            qty: 5
+          name: 'Burger',
+          price: 10,
+          desc: 'Extra Cheese and Spice',
         },
         {
-            name: 'Garlic Bread',
-            price: 200,
-            qty: 7
+          name: 'Panner Tikka',
+          price: 22.25,
+          desc: 'Smooth and Delicious Paneer grilled to Perfection',
         },
         {
-            name: 'Onion Pizza',
-            price: 300,
-            qty: 6
+          name: 'Pizza',
+          price: 19.25,
+          desc: 'Smooth and Delicious Pizza grilled to Perfection',
         },
         {
-            name: 'Mac Maharaja',
-            price: 50,
-            qty: 3
+          name: 'Pasta',
+          price: 15.99,
+          desc: 'Smooth and Delicious Pasta grilled to Perfection',
+        },
+        {
+          name: 'Noodles',
+          price: 15.99,
+          desc: 'Smooth and Delicious Pasta grilled to Perfection',
         }
-    ];
-
+    ]
+      
     const [foods, setFoods] = useState(initialFoods);
 
     const addFood = (food) => {

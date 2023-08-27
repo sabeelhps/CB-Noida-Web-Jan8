@@ -13,13 +13,21 @@ const Food = ({ food }) => {
   }
 
   return (
-      <li onClick={foodClickHandler} className={classes.food}>
-          <p>
-            <span className={classes["food-name"]}>{foodName}</span>
-            <br/>
-            <span className={classes["food-price"]}>{ food.price }</span>
-          </p>
-          <span className={classes["food-qty"]}>{ food.qty }</span>
+    <li onClick={foodClickHandler} className={classes.food}>
+            <div>
+                <p className={classes["food-name"]}>{foodName}</p>
+                <p className={classes["food-desc"]}>{food.desc}</p>
+                <p className={classes["food-price"]}>${ food.price}</p>
+            </div>
+            <div>
+                <label>Quantity</label>
+                <input
+                    type="number"
+                    min="1"
+                    defaultValue={1}
+                />
+                <button className={classes['add-btn']}>+ Add</button>
+            </div>
     </li>
   )
 }
