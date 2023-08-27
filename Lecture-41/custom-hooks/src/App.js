@@ -1,5 +1,6 @@
 import './App.css';
 import GithubCard from './components/GithubCard';
+import GithubCardWithCustomHook from './components/GithubCardWithCustomHook';
 import useToggle from './hooks/useToggle';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       <h1>{isHappy ? '😄' : '🙁'}</h1>
       <button onClick={toggleIsHappy}>Toggle</button>
-      <GithubCard/>
+      {/* <GithubCard/> */}
+      <GithubCardWithCustomHook/>
     </div>
   );
 }
