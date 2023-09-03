@@ -1,0 +1,28 @@
+=>Add atleast 3 Projects in your resume and provide the hosted and github link for each project.
+
+// Project Description
+
+// SHOPPING CART 
+// Technologies: Node.js, Express, MongoDB, ejs, Bootstrap, passport.js, helmet
+// 1.Created front-end template of the website with EJS along with HTML,CSS and Bootstrap. 
+// 2.Implemented the MVC architecture for Back-End using technologies like Node.js, express.js, MongoDB, passport.js.
+// 3.Implemented the cart functionality to create the orders.
+// 4.Implemented basic Web Security features using Helmet, Mongo Sanitize etc to mitigate small attacks.
+
+
+// Chatting App
+// Technologies: Node.js, Express, Bootstrap, Socket.io
+// 1.Implemented the front-end of the app using Bootstrap
+// 2.Created the backend using http module, express and socket.io
+// 3.Implemented real time message chatting, real time use typing status etc.
+
+// Food App 
+// Technologies: React.js, Node.js, Express.js, MongoDB
+// 1.Created  a Food Order App using MERN Stack. 
+// 2.Created the Frontend using React.js. 
+// 3.Implemented the MVC architecture for Back-End using technologies like Node.js, Express.js, MongoDB.
+// 4.Implemented the authentication using Bcrypt and JWT.
+
+
+// Note : Highlight all the relevent technologies in the project description 
+
